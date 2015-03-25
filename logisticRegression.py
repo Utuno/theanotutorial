@@ -6,7 +6,7 @@ rng = numpy.random
 
 N = 10
 feats = 10
-realW=numpy.array([1]*10)
+realW=numpy.array([1.0]*10)
 realB=-1
 X=rng.randn(N, feats)
 Y=[1 if realW.dot(x)+realB>0 else 0 for x in X]
@@ -14,7 +14,7 @@ Y=[1 if realW.dot(x)+realB>0 else 0 for x in X]
 D=[X,Y]
 print D[0][:min(10,N)],D[1][:min(10,N)]
 
-training_steps = 10000
+training_steps = 100
 
 # Declare Theano symbolic variables
 x = T.matrix("x")
