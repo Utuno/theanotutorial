@@ -1,0 +1,5 @@
+[blas]
+ldflags="-L/home/tushimaru/anaconda/lib/ -lf77blas -latlas -lgfortran"
+[global]
+floatX=float32
+device=gpu
